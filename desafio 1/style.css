@@ -1,0 +1,200 @@
+@import url('https://fonts.google.com/specimen/Overpass');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+p {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.centermain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.centercard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 70%;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+    border-radius: 25px;
+    background-color: hsl(213, 19%, 18%);
+}
+
+.center-card-content {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    padding: 15px;
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+        'header header header header header'
+        'middle1 middle1 middle1 middle1 middle1'
+        'middle2 middle2 middle2 middle2 middle2'
+        'footer footer footer footer footer'
+    ;
+}
+
+#header-card {
+    width: 100%;
+    height: 15%;
+}
+
+#star {
+    height: 100%;
+    width: 20%;
+}
+
+#star>img {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: hsl(219, 9%, 29%);
+}
+
+#header-card {
+    grid-area: header;
+}
+
+#middle1-card {
+    grid-area: middle1;
+}
+
+#middle2-card {
+    display: flex;
+    grid-area: middle2;
+}
+
+#footer-card {
+    grid-area: footer;
+}
+
+.middle2-card-content>div {
+    text-align: center;
+    margin: 0px 3%;
+    width: 15%;
+    height: 65%;
+    border-radius: 50%;
+    padding: 1% 4% 4% 4%;
+    background-color: hsl(219, 9%, 29%);
+}
+
+.middle2-card-content>div:hover {
+    background-color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+.middle2-card-content>div:active {
+    background-color: white;
+    cursor: pointer;
+}
+.footer-card-content>input {
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    border: none;
+}
+
+.footer-card-content>input:active {
+    color: hsl(25, 97%, 53%);
+    background-color: white;
+}
+/* 2 card */
+/* 2 card */
+.card-secundary {
+    width: 90%;
+    height: 90%;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-card-secundary {
+    padding: 30px;
+    position: relative;
+    width: 90%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: hsl(213, 19%, 18%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.center-card-secundary > img {
+    top: 30px;
+    width: 40%;
+    height: 30%;
+}
+
+.thanks-rating {
+    margin: 10px 0px 0px 0px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(216, 3%, 32%);
+}
+@media (max-height: 700px) {
+    h1 {
+        font-size: 25pt;
+    }
+    #header-card {
+        width: 100%;
+        height: 10%;
+    }
+    .card {
+        height: 500px;
+    }
+}
+@media (max-width: 800px) {
+    h1 {
+        font-size: 25pt;
+    }
+    #header-card {
+        width: 100%;
+        height: 40px;
+        position: absolute;
+        top: -25px;
+    }
+    .card {
+        height: 500px;
+    }
+    .middle2-card-content>div {
+        text-align: center;
+        margin: 0px 1%;
+        width: 20%;
+        height: 100%;
+        border-radius: 50%;
+        padding: 1% 4% 4% 4%;
+        background-color: hsl(219, 9%, 29%);
+    }
+}

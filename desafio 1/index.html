@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DESAFIO</title>
+</head>
+
+<body>
+    <main>
+        <div class="centermain">
+            <div class="centercard">
+                <div class="card">
+                    <div class="center-card-content">
+                        <div id="header-card">
+                            <div id="star">
+                                <img src="./assets/icon-star.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="middle1-card-content" id="middle1-card">
+                            <h1>How did we do?</h1>
+                            
+                            <p>Please let us know how we did with your support request. All feedback is appreciated to
+                                help us improve our offering!</p>
+                        </div>
+                        <div class="middle2-card-content" id="middle2-card">
+                            <div id="rating-1" onclick="recebeNota1()">1</div>
+                            <div id="rating-2" onclick="recebeNota2()">2</div>
+                            <div id="rating-3" onclick="recebeNota3()">3</div>
+                            <div id="rating-4" onclick="recebeNota4()">4</div>
+                            <div id="rating-5" onclick="recebeNota5()">5</div>
+                        </div>
+                        <div class="footer-card-content" id="footer-card">
+                            <input type="submit" value="SUBMIT" onclick="alternaTela()">
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD 2  -->
+                <div class="card-secundary">
+                    <div class="center-card-secundary">
+                        <img src="./assets/illustration-thank-you.svg" alt="">
+                        <div class="thanks-rating"></div>
+                        <h1>Thank you!</h1>
+                        <p>We appreciate you taking the time to give
+                            a rating. If you ever need more support, don't
+                            hesitate to get in touch!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+    <script src="./JS/script.js"></script>
+</html>
