@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Roboto:wght@100;300&family=Rubik:wght@300;400;500&display=swap');
+
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Rubik', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    overflow: hidden;
+}
+
+/* DIV PAI DO MAIN */
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ------------------ */
+
+/* DIV FILHO DO MAIN - CONTEUDO */
+.contentmain {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ------------------ */
+
+/* DIV PAI DO CARD */
+.card {
+    max-width: 700px;
+    min-width: 450px;
+    min-height: 400px;
+    max-height: 800px;
+    width: 60%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+/* ------------------ */
+
+/* DIV FILHO DO CARD - CONTEUDOS */
+.contentcard {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+/* ------------------ */
+
+/* COLUM 1 CARD */
+.img-product {
+    height: auto;
+    width: 100%;
+    background-image: url('./images/image-product-desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+/* ------------------ */
+
+/* COLUM 2 CARD */
+.txtcard {
+    width: 80%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/* ------------------ */
+
+/* COMPONENTE PREÇO */
+.price>span {
+    font-size: 18pt;
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+    margin: 0 20px 0 0;
+}
+
+strike {
+    font-size: 10pt;
+    color: rgba(0, 0, 0, 0.534);
+}
+/* ------------------ */
+
+/* ESTILIZAÇÃO FONTES */
+p:first-child {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+}
+/* ------------------ */
+
+/* COMPONENTE INPUT */
+.input-btn {
+    position: relative;
+}
+
+.input-btn>input {
+    padding: 20px 10px;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    min-width: 200px;
+    width: 350px;
+}
+
+.input-btn>img {
+    position: absolute;
+    top: 20px;
+    left: 120px;
+}
+
+.input-btn > input:active{
+    background-color: hsl(159, 31%, 28%);
+}
+/* ------------------ */
+
+@media screen and (max-width: 510px) {
+
+    .contentmain {
+        height: 80%;
+    }
+
+    .card {
+        width: 90%;
+        height: 100%;
+        background-color: hsl(30, 38%, 92%);
+    }
+
+    .contentcard {
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .img-product {
+        width: 80%;
+        height: 100%;
+        background-image: url('./images/image-product-mobile.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .txtcard {
+        align-items: center;
+        margin: 0;
+        padding: 20px;
+        background-color: white;
+        flex-wrap: wrap;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    /* COMPONENTE PREÇO */
+    .price {
+        align-self: flex-start;
+    }
+    /* ------------------ */
+
+    p:first-child {
+        letter-spacing: 2px;
+        align-self: flex-start;
+        text-indent: -5px;
+    }
+
+    p {
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.5;
+        margin: 10px 0;
+        color: rgba(0, 0, 0, 0.575);
+    }
+
+    /* COMPONENTE INPUT */
+    .input-btn {
+        position: relative;
+        margin: 10px -20px;
+    }
+
+    .input-btn>input {
+        padding: 10px 0px;
+        background-color: hsl(158, 36%, 37%);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        min-width: 300px;
+    }
+
+    .input-btn>img {
+        position: absolute;
+        top: 26%;
+        left: 36%;
+        width: 4%;
+    }
+    /* ------------------ */
+}
