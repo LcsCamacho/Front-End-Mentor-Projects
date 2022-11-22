@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&family=Rubik:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    background-color: hsl(226, 43%, 10%);
+
+}
+
+div {
+    padding: 20px;
+}
+
+small {
+    font-size: 12pt;
+    user-select: none;
+}
+
+strong {
+    user-select: none;
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 2.5em;
+}
+
+.main {
+    border: 2px solid red;
+}
+
+.container-fluid {
+    max-width: 1440px;
+}
+
+#nameCard1 {
+    width: 120px;
+}
+
+.card {
+    color: aliceblue;
+    background-color: hsl(235, 46%, 20%);
+}
+
+#card1-fundo {
+    background-color: hsl(235, 46%, 20%);
+    color: white;
+
+}
+
+#card1 {
+    background-color: hsl(246, 80%, 60%);
+    color: white;
+}
+
+#card-img {
+    width: 70px;
+    height: 60px;
+    position: absolute;
+    top: 0px;
+    right: 20px;
+}
+
+#card1-txt-footer {
+    color: rgb(151, 151, 151);
+    cursor: pointer;
+    width: 70px;
+}
+
+#card1-txt-footer:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+#card1-txt-footer:active {
+    color: antiquewhite;
+}
+
+#card-effect1 {
+    background-color: hsl(15, 100%, 70%);
+}
+
+#card-effect2 {
+    background-color: hsl(145, 58%, 55%);
+}
+
+#card-effect3 {
+    background-color: hsl(195, 74%, 62%);
+}
+
+#card-effect4 {
+    background-color: hsl(264, 64%, 52%);
+}
+
+#card-effect5 {
+    background-color: hsl(348, 100%, 68%);
+}
+
+#card-effect6 {
+    background-color: hsl(43, 84%, 65%);
+}
