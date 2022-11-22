@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #grad1 {
+            position: relative;
+            height: 100px;
+            width: 100px;
+            /* For browsers that do not support gradients */
+            background-image: conic-gradient(white);
+            border-radius: 50%;
+            animation: progressbar 2s linear infinite;
+            animation-delay: 0.3s;
+        }
+
+        #grad2 {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            height: 75px;
+            width: 75px;
+            background-color: white;
+            /* For browsers that do not support gradients */
+            border-radius: 50%;
+            text-align: center;
+        }
+
+        @keyframes progressbar {
+            15% {
+                background-image: conic-gradient(blue, white,white, white,white, white,white);
+                
+            }
+
+            30% {
+                background-image: conic-gradient(blue, blue, white, white,white, white,white);
+                
+            }
+
+            45%{
+                background-image: conic-gradient(blue, blue, blue, white,white, white,white);
+                
+            }
+            60%{
+                background-image: conic-gradient(blue, blue, blue, blue,white, white,white);
+                
+            }
+            75%{
+                background-image: conic-gradient(blue, blue, blue, blue,blue, white,white);
+               
+            }
+            90%{
+                background-image: conic-gradient(blue, blue, blue, blue,blue, blue,white);
+                
+            }   
+            100%{
+                background-image: conic-gradient(blue, blue, blue, blue,blue, blue,blue);
+                
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Conic Gradient - Three Colors</h1>
+
+    <div id="grad1">
+        <div id="grad2"></div>
+    </div>
+
+</body>
+    <script>
+        let porcent = document.querySelector('#grad2')
+        var i = 0
+        setInterval(() => {           
+            porcent.innerHTML = `<p>${i}%</p>`;
+            i+=25
+            if (i > 100) i = 0
+        }, 320)
+    </script>
+</html>
