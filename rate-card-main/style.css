@@ -18,6 +18,10 @@ p {
     font-size: 15px;
 }
 
+input {
+    cursor: pointer;
+}
+
 .centermain {
     display: flex;
     justify-content: center;
@@ -53,10 +57,10 @@ p {
     display: grid;
     gap: 10px;
     grid-template-areas:
-        'header header header header header'
-        'middle1 middle1 middle1 middle1 middle1'
-        'middle2 middle2 middle2 middle2 middle2'
-        'footer footer footer footer footer'
+        'header'
+        'middle1'
+        'middle2'
+        'footer'
     ;
 }
 
@@ -93,18 +97,29 @@ p {
     grid-area: footer;
 }
 
+.middle2-card-content {
+    display: flex;
+    justify-content: space-between;
+}
+
 .middle2-card-content>div {
     text-align: center;
-    margin: 0px 3%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     width: 15%;
     height: 65%;
     border-radius: 50%;
-    padding: 1% 4% 4% 4%;
     background-color: hsl(219, 9%, 29%);
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
 }
 
 .middle2-card-content>div:hover {
-    background-color: hsl(25, 97%, 53%);
+    background-color: hsl(25, 97%, 50%);
     cursor: pointer;
 }
 .middle2-card-content>div:active {
